@@ -3,14 +3,23 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --darkmain: #242424;
+  --darksecond: darkslategrey;
+
+  --primary: var(--darkmain);
+  --secondary: var(--darksecond);
+
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 .cards {
@@ -18,4 +27,19 @@
     height: 45vh;
     border-radius: 20px;
     box-shadow: 5px 4px 4px;
+    background-color: var(--secondary);
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  column-gap: 1vh;
+  row-gap: 4vh;
+  padding-top: 1%;
+  margin-top: 4%;
+  margin-left: 4.5%;
+
 }
