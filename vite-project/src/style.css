@@ -5,14 +5,18 @@
 
   --darkmain: #242424;
   --darksecond: darkslategrey;
+  --shadowmain: white;
+  --shadowsecondary: darkslategrey;
+  --lightmain: white;
+  --lightsecond: #7AC5CD;
 
   --primary: var(--darkmain);
   --secondary: var(--darksecond);
+  --shadow: var(--shadowmain);
 
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: var(--primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,7 +30,7 @@
     width: 20%;
     height: 45vh;
     border-radius: 20px;
-    box-shadow: 5px 4px 4px;
+    box-shadow: 5px 4px 4px var(--shadow);
     background-color: var(--secondary);
 }
 
@@ -41,5 +45,35 @@
   padding-top: 1%;
   margin-top: 4%;
   margin-left: 4.5%;
-
 }
+body {
+  background-color: var(--primary);
+}
+
+.dark {
+  --primary: var(--darkmain);
+  --secondary: var(--darksecond);
+  --shadow: var(--shadowmain);
+}
+
+.light {
+  --primary: var(--lightmain);
+  --secondary: var(--lightsecond);
+  --shadow: var(--shadowsecondary);
+}
+
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  column-gap: 1vh;
+  row-gap: 4vh;
+  padding-top: 1%;
+  margin-top: 4%;
+  margin-left: 4.5%;
+}
+
+
