@@ -4,7 +4,7 @@
   font-weight: 400;
 
   --darkmain: #242424;
-  --darksecond: darkslategrey;
+  --darksecond: rgb(68, 114, 114);
   --shadowmain: white;
   --shadowsecondary: darkslategrey;
   --lightmain: white;
@@ -16,7 +16,6 @@
 
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,26 +25,7 @@
 
 }
 
-.cards {
-    width: 20%;
-    height: 45vh;
-    border-radius: 20px;
-    box-shadow: 5px 4px 4px var(--shadow);
-    background-color: var(--secondary);
-}
 
-#app {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 90vw;
-  column-gap: 1vh;
-  row-gap: 4vh;
-  padding-top: 1%;
-  margin-top: 4%;
-  margin-left: 4.5%;
-}
 body {
   background-color: var(--primary);
 }
@@ -62,6 +42,15 @@ body {
   --shadow: var(--shadowsecondary);
 }
 
+.difficulty {
+  background-color: var(--secondary);
+}
+
+#selector {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
 
 #app {
   display: flex;

@@ -6,16 +6,8 @@ let mode = 'Light'
 
 document.querySelector('.change_theme').insertAdjacentHTML('afterbegin', `<button id='theme'>${mode}</button>`)
 
-
-
-document.querySelector('.category-container').insertAdjacentHTML('afterbegin', `<select id="category" name="category-select">
-    <option value="">All</option>
-    <option value="animal">Animal</option>
-    <option value="fruit">Fruit</option>
-    <option value="vehicle">Vehicle</option>
-    <option value="color">Color</option>
-    <option value="shape">Shape</option>
-</select>`)
+document.querySelector('#app').insertAdjacentHTML('afterbegin', `<div id=selector></div>`)
+document.querySelector('#app').insertAdjacentHTML('beforeend', `<div id=game></div>`)
 
 
 document.querySelector('#theme').addEventListener("click", function(){
@@ -32,21 +24,5 @@ document.querySelector('#theme').addEventListener("click", function(){
     }
 })
 
-document.querySelector('#category').addEventListener('change', function(){
-    if(this.value==='animal'){
-        document.querySelector('#app').innerHTML='';
-    } else if(this.value==='fruit'){
-        document.querySelector('#app').innerHTML='';
-    } else if(this.value==='vehicle'){
-        document.querySelector('#app').innerHTML='';
-    } else if(this.value==='color'){
-        document.querySelector('#app').innerHTML='';
-    } else if(this.value==='shape'){
-        document.querySelector('#app').innerHTML='';
-    } else {
-        cards(games, document.querySelector('#app'))
-    }
 
-})
-
-cards(games, document.querySelector('#app'))
+cards(games, document.querySelector('#selector'))
