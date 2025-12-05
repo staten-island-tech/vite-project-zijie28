@@ -1,6 +1,7 @@
 import { fruit_pic, animal_pic } from './pictures.js';
 
 export function cards(list, element) {
+
   for (let i = 0; i < list.length; i++) {
     element.insertAdjacentHTML(
       'beforeend',
@@ -9,10 +10,11 @@ export function cards(list, element) {
        </button>`
     );
   }
-
+  let timerId='';
 
 
   document.querySelector('#selector').addEventListener('click', function (event) {
+    if (timerId){clearInterval(timerId);}
     const target = event.target.closest('button');
     let seconds = 0;
     const game = document.querySelector('#game');
@@ -77,6 +79,15 @@ export function cards(list, element) {
       }
     }
     
+    document.querySelectorAll('.flip-card').forEach(div =>{
+      div.addEventListener('click', function(event){
+      const card_sele = event.target.closest('.flip-card');
+      console.log(card_sele);
+      card_sele.classList.toggle('flip');
+    })
+    })
+
+
     game.insertAdjacentHTML('beforeend', `<h1 id="timer">Time Elapsed: ${seconds} seconds</h1>`);
     timerId = setInterval(() => {
       seconds += 1;

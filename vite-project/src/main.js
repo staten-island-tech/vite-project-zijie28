@@ -26,3 +26,4 @@ document.querySelector('#theme').addEventListener("click", function(){
 
 
 cards(games, document.querySelector('#selector'))
+

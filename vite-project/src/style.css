@@ -95,7 +95,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -107,12 +107,12 @@ body {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: var(--secondary);
   color: var(--primary)
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: var(--secondary);
   color: white;
   transform: rotateY(180deg);
 }
