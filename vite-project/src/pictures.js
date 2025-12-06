@@ -1,19 +1,20 @@
 const fruit_pic = [
-  { fruit: 'banana', img: '/fruit/banana.jpg' },
-  { fruit: 'kiwi', img: '/fruit/kiwi.jpg' },
-  { fruit: 'dragon fruit', img: '/fruit/dragonfruit.webp' },
-  { fruit: 'mango', img: '/fruit/mango.jpg' },
-  { fruit: 'pomegranate', img: '/fruit/pomegranate.webp' },
-  { fruit: 'watermelon', img: '/fruit/watermelon.webp' },
+  { name: 'banana', img: '/fruit/banana.jpg' },
+  { name: 'kiwi', img: '/fruit/kiwi.jpg' },
+  { name: 'dragon fruit', img: '/fruit/dragonfruit.webp' },
+  { name: 'mango', img: '/fruit/mango.jpg' },
+  { name: 'pomegranate', img: '/fruit/pomegranate.webp' },
+  { name: 'watermelon', img: '/fruit/watermelon.webp' }
 ];
 
 const animal_pic = [
-  { animal: 'bunny', img: '/animal/bunny.webp' },
-  { animal: 'cheetah', img: '/animal/cheetah.jpg' },
-  { animal: 'lion', img: '/animal/lion.jpg' },
-  { animal: 'mouse', img: '/animal/mouse.jpg' },
-  { animal: 'elephant', img: '/animal/elephant.jpg' },
-  { animal: 'panda', img: '/animal/panda.jpg' }
+  { name: 'bunny', img: '/animal/bunny.webp' },
+  { name: 'cheetah', img: '/animal/cheetah.jpg' },
+  { name: 'lion', img: '/animal/lion.jpg' },
+  { name: 'mouse', img: '/animal/mouse.jpg' },
+  { name: 'elephant', img: '/animal/elephant.jpg' },
+  { name: 'panda', img: '/animal/panda.jpg' }
 ];
+
 
 export {animal_pic, fruit_pic};
