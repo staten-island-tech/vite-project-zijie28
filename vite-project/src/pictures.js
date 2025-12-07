@@ -16,5 +16,14 @@ const animal_pic = [
   { name: 'panda', img: '/animal/panda.jpg' }
 ];
 
+const vehicle_pic = [
+  { name: 'nissan altima', img: '/vehicle/nissan.jpg' },
+  { name: 'ford mustang', img: '/vehicle/mustang.jpg' },
+  { name: 'chevrolet camaro', img: '/vehicle/camaro.jpg' },
+  { name: 'tesla model s', img: '/vehicle/tesla.jpg' },
+  { name: 'jeep wrangler', img: '/vehicle/jeep.jpg' },
+  { name: 'honda civic', img: '/vehicle/civic.jpg' }
+]
 
-export {animal_pic, fruit_pic};
+
+export {animal_pic, fruit_pic, vehicle_pic};
