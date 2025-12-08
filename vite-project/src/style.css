@@ -9,10 +9,14 @@
   --shadowsecondary: darkslategrey;
   --lightmain: white;
   --lightsecond: #7AC5CD;
+  --timerdark: white;
+  --timerlight: black;
 
   --primary: var(--darkmain);
   --secondary: var(--darksecond);
   --shadow: var(--shadowmain);
+  --timer: var(--timerdark);
+  
 
 
   color-scheme: light dark;
@@ -34,12 +38,14 @@ body {
   --primary: var(--darkmain);
   --secondary: var(--darksecond);
   --shadow: var(--shadowmain);
+  --timer: var(--timerdark);
 }
 
 .light {
   --primary: var(--lightmain);
   --secondary: var(--lightsecond);
   --shadow: var(--shadowsecondary);
+  --timer: var(--timerlight);
 }
 
 .difficulty {
@@ -115,6 +121,13 @@ body {
   background-color: var(--secondary);
   color: white;
   transform: rotateY(180deg);
+}
+#timer {
+  color: var(--timer);
+}
+
+#upload-div {
+  color: var(--timer);
 }
 
 h1 {
